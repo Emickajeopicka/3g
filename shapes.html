@@ -1,0 +1,100 @@
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test</title>
+        <style>
+            body {
+                font-family: monospace;
+                font-size: 32px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+            .tlacitko {
+                padding: 10px;
+                font-size: 20px;
+                margin: 10px;
+            }
+
+            .platno {
+                border: 2px solid black;
+                width: 800px;
+                height: 500px;
+            }
+
+            .ctverec {
+                border: 5px solid black;
+                width: 70px;
+                height: 70px;
+            }
+
+            .schovej {
+                display: none;
+            }
+            .obrazek {
+                width: 50px;
+            }
+            
+            .circleBase {
+             border-radius: 50%;
+            }
+
+            .circle1 {
+            width: 100px;
+            height: 100px;
+            background: #4bc475;
+            border: 1px solid #000;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Picasso</h1>
+            <div class="platno"></div>
+            <button onclick="kresliText()" id="tlacitkoText" class="tlacitko">Text</button>
+            <button onclick="kresliKolecko()" id="tlacitkoKolecka" class="tlacitko">Kolečka</button>
+            <button onclick="kresliCtverec()" id="tlacitkoCtverce" class="tlacitko">Čtverečky</button>
+         </div>
+        <img   onclick="schovej()" class="obrazek" src="hide.png" alt="">
+        <div class="circleBase circle"></div>
+        <div class="circleBase circle"></div>
+        <div class="circleBase circle"></div>
+        <div class="circleBase circle"></div>
+        <div class="circleBase circle"></div>
+        
+        <script>
+            const platno = document.querySelector(".platno")
+            const tlacitkoCtverce = document.querySelector("#tlacitkoCtverce")
+            const tlacitkoKolecka = document.querySelector("#tlacitkoKolecka")
+            const tlacitkoText = document.querySelector("#tlacitkoText")
+            const obrazek = document.querySelector(".obrazek")
+            const wrapper = document.querySelector(".wrapper")
+
+
+            function kresliCtverec() {
+                for( let i = 0; i < 5; i++) {
+   
+                    let ctverec = document.createElement('div')
+                    ctverec.classList.add("ctverec")
+                    platno.appendChild(ctverec)
+                }
+            }
+            function kresliKolecko() {
+                document.getElementById("tlacitkoKolecka")
+
+            }
+
+            function kresliText() {
+                document.getElementById("tlacitkoText")
+            }
+            
+            function schovej () {
+                wrapper.classList.add("schovej")
+            }
+        </script>
+    </body>
+</html>

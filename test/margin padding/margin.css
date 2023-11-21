@@ -1,0 +1,33 @@
+.red {
+    background-color: red;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+    display :none;
+
+}
+
+.pink {
+    background-color: darkorchid;
+    color: white;
+    display: block;
+    margin: 0px auto;
+    width: 100px;
+    text-align: center;
+}
+
+.spagety {
+    background-color: #FFE5CC;
+    color: black;
+    display: block;
+}
+
+.ketchup {
+    background-color: red;
+    color: black;
+
+    
+}

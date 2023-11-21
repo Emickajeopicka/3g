@@ -1,0 +1,28 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.text {
+    text-align: center;
+    font-style: oblique;
+}
+.container {
+    position: absolute; /* nezavisi na ostatnich prvcich */
+    right: 10px;
+    display: flex;
+    align-items: center;
+     flex-direction: column; /* aby byly pod sebou */
+}
+.obr {
+    width: 30px;
+    height: 30px;
+}
+.school {
+    display: none;
+}
+.holiday {
+    display: block;
+}

@@ -1,0 +1,30 @@
+body{
+    background-color: thistle;
+}
+.images{
+    height: 300px;
+    width: auto;
+    border: 5px solid black(35, 86, 144);
+    border-radius: 5%;
+}
+
+.headings {
+    color: palevioletred;
+}
+
+li {
+    font-family: cursive;
+    color: grey;
+}
+
+.buttons {
+    background-color: indianred;
+    color: ivory;
+    border-color: white;
+}
+
+#comment-input {
+    height: 150px;
+    width: 300px;
+    resize: none;
+}

@@ -1,0 +1,65 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.red {
+    background-color: red;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+    display :none;
+
+}
+
+.pink {
+    background-color: darkorchid;
+    color: white;
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+    text-align: center;
+}
+
+.spagety {
+    background-color: #FFE5CC;
+    color: black;
+    display: block;
+    padding: 50px;
+    width: 200px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.ketchup {
+    background-color: red;
+    color: black;
+    width: 75%; 
+}
+
+.slunicko {
+    background-color: yellow;
+    width: 250px;
+    height: 3050px;
+    position: relative;
+}
+.teletubbies {
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+}
+
+.tinky-winky {
+    background-color: purple;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+}
+.dipsy {
+    background-color: seagreen;
+}
+.po {
+    background-color: red;
+}

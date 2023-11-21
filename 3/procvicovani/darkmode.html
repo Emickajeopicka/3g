@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Mode Toggle</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #F7BEC0; /* Light Mode background color */
+            transition: background-color 0.3s;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        .toggle-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .MOON {
+            left: 30px;
+
+        }
+
+        .toggle-button i {
+            color: #29A0B1;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #000; /* Dark Mode background color */
+        }
+
+        body.dark-mode h1, body.dark-mode p {
+            color: #FFF; 
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-button" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i> 
+    </button>
+    <h1>Light/Dark Mode</h1>
+    <p>To to je jednoducha stranka co prepina dark a light mode</p>
+    <img src="MOONPNG.avif" id="MOON">
+    <script>
+        // JavaScript funkce na toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
